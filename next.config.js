@@ -4,7 +4,10 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  basePath: '/gh-pages-test',
+  basePath: '/programming',
+  images: {
+    unoptimized: true
+  }
 }
 
 module.exports = nextConfig
