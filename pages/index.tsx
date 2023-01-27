@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Language from '../components/language'
@@ -8,19 +9,22 @@ import Tools from '../components/tools'
 
 export default function Home({ }: NextPage) {
   return (
-    <div>
-      <main className="dark:bg-gray-800 font-mono bg-white lg:h-screen">
+    <div className='dark:bg-zinc-900'>
+      <Head>
+        <title>Programming | Samsul Muarrif</title>
+      </Head>
+      <section className="dark:bg-stone-800 dark:text-current font-mono bg-stone-200 lg:h-screen">
         <Header />
         <Hero />
-      </main>
-      <div className="text-zinc-600 mx-auto max-w-xs md:max-w-2xl space-y-8 mt-4">
+      </section>
+      <main className="text-zinc-600 dark:text-slate-200 mx-auto max-w-xs md:max-w-2xl space-y-8 mt-4">
         <Language />
         <Tools />
         <Skills />
         <Projects />
-      </div>
+      </main>
       <footer className="h-28 flex items-end">
-        <div className="flex justify-center w-full py-6 text-sm text-zinc-600">
+        <div className="flex justify-center w-full py-6 text-sm text-zinc-600 dark:text-slate-300">
           &copy; {new Date().getFullYear()} Samsul Muarrif
         </div>
       </footer>

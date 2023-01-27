@@ -4,7 +4,7 @@ import Potrait from "public/images/socbuzz.jpg"
 
 export default function Hero() {
    return (
-      <div className="flex items-center h-max">
+      <div className="flex items-center h-max pt-20">
          <div className="container mx-auto px-6 flex flex-col justify-between items-center pb-4">
             <div className="flex flex-col">
                <Link href="/" className="mx-auto">
@@ -16,8 +16,8 @@ export default function Hero() {
                      className="rounded-full w-28 md:w-44 mx-auto"
                   />
                </Link>
-               <p className="md:text-3xl my-6 text-green-500 text-center dark:text-white">
-                  Hi, I&#x27;m <Link href="https://samsulmuarrif.me/portfolio" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
+               <p className="md:text-3xl my-6 text-green-500 text-center">
+                  Hi, I&#x27;m <Link href="https://samsulmuarrif.me" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
                </p>
                <h4 className="max-w-3xl lg:text-2xl mx-auto dark:text-white text-zinc-600 text-center py-2">
                   Building digital products, brands, and experiences.
@@ -26,7 +26,7 @@ export default function Hero() {
                   Aceh, Indonesia
                </h5>
                <div className="flex flex-col items-center justify-center py-4">
-                  <div className="capitalize py-2 mb-4 px-4 mt-6 bg-orange-500 rounded-full dark:bg-white text-zinc-50 dark:text-white">
+                  <div className="capitalize py-2 mb-4 px-4 mt-6 bg-orange-500 rounded-full dark:bg-white text-zinc-50 dark:text-zinc-700">
                      Connect with me
                   </div>
                   <div className="flex gap-4">
@@ -58,7 +58,7 @@ export default function Hero() {
                               d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"
                            />
                         </svg>
-                        Gmail
+                        <span className="dark:text-slate-200">Gmail</span>
                      </Link>
                      <Link
                         href="https://wa.me/6285159606776?text=Hello+Samsul+Muarrif"
@@ -78,7 +78,7 @@ export default function Hero() {
                               d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
                            />
                         </svg>
-                        Whatsapp
+                        <span className="dark:text-slate-200">Whatsapp</span>
                      </Link>
                   </div>
                </div>

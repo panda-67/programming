@@ -10,15 +10,23 @@ export default function Projects() {
                <ProjectItem title="Rampagoe Aerial Surveys" source="rampago.github.io">
                   Halaman web untuk promosi bisnis.
                </ProjectItem>
+               <ProjectItem title="WebFont Documentation" source="doc.creative.timoh.net">
+                  Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
+                     className="hover:text-sky-500"
+                     href="https://creative.timoh.net/"
+                  >
+                     (Creative Platform)
+                  </Link>.
+               </ProjectItem>
             </div>
          </div>
          <div className="flex gap-4">
             <YearTag>2022</YearTag>
             <div className="space-y-4 my-1">
-               <ProjectItem title="DQA Dokumentasi" source="https://doc.dqa.sch.id/">
+               <ProjectItem title="DQA Dokumentasi" source="doc.dqa.sch.id">
                   Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
                      className="hover:text-sky-500"
-                     href="https://dqa.sch.id//"
+                     href="https://dqa.sch.id/"
                   >
                      (Darul Quran Aceh)
                   </Link> pada halaman Admin.
@@ -83,7 +91,7 @@ export default function Projects() {
 
 function YearTag({ children }: { children: any }) {
    return (
-      <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-400 w-max h-max">
+      <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-500 dark:bg-amber-100 dark:text-stone-800 w-max h-max">
          {children}
       </div>
    )
