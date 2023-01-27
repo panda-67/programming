@@ -70,7 +70,7 @@ export default function Hero() {
                            <path
                               fill="#25d366"
                               stroke="#fff"
-                              stroke-width="26"
+                              strokeWidth="26"
                               d="M123 393l14-65a138 138 0 1150 47z"
                            />
                            <path

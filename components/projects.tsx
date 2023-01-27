@@ -91,7 +91,7 @@ export default function Projects() {
 
 function YearTag({ children }: { children: any }) {
    return (
-      <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-500 dark:bg-amber-100 dark:text-stone-800 w-max h-max">
+      <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-500 text-amber-50 dark:bg-amber-100 dark:text-stone-800 w-max h-max">
          {children}
       </div>
    )

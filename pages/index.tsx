@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
+import MyHead from '../components/head'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Language from '../components/language'
@@ -10,9 +10,7 @@ import Tools from '../components/tools'
 export default function Home({ }: NextPage) {
   return (
     <div className='dark:bg-zinc-900'>
-      <Head>
-        <title>Programming | Samsul Muarrif</title>
-      </Head>
+      <MyHead title='Programming | Samsul Muarrif' />
       <section className="dark:bg-stone-800 dark:text-current font-mono bg-stone-200 lg:h-screen">
         <Header />
         <Hero />
