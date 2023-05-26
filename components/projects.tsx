@@ -7,8 +7,15 @@ export default function Projects() {
          <div className="flex gap-4">
             <YearTag>2023</YearTag>
             <div className="space-y-4 my-1">
-               <ProjectItem title="Rampagoe Aerial Surveys" source="rampago.github.io">
-                  Halaman web untuk promosi bisnis.
+               <ProjectItem title="Graptail" source="graptail.net">
+                  <em>Re-layout</em> tampilan aplikasi web graptail, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
+               </ProjectItem>
+               <ProjectItem title="WebFont" source="creative.timoh.net">
+                  Menambahkan bebeapa fitur pada aplikasi WebFont, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
+               </ProjectItem>
+               <ProjectItem title="Umarhmu" source="umrahmu.com">
+                  The travel and membership app to help people to do hajj & umrah. Member will get mentoring session to advanced course and daily task about how to gain extra income and prepare themself to go to makkah. The member app is mobile version (Android and iOS). Communicates with API to main app that build using Laravel.<br/>
+                  <small>(<em>under development</em>)</small>
                </ProjectItem>
                <ProjectItem title="WebFont Documentation" source="doc.creative.timoh.net">
                   Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
@@ -67,7 +74,7 @@ export default function Projects() {
                </ProjectItem>
             </div>
          </div>
-         <div className="flex gap-4">
+         {/* <div className="flex gap-4">
             <YearTag>2021</YearTag>
             <ProjectItem title="Catalog App (Octo Poin)" source="octopoin.com">
                Sebuah aplikasi yang dapat menampilkan barang-barang dagangan
@@ -84,7 +91,7 @@ export default function Projects() {
                Sebuah blog sederhana yang dibuat menggunakan Django
                Framework.
             </ProjectItem>
-         </div>
+         </div> */}
       </div>
    )
 }
