@@ -84,13 +84,6 @@ export default function Projects() {
                menjangkau pembeli lebih banyak dan juga menampilkan{" "}
                <em>insight</em>.
             </ProjectItem>
-         </div>
-         <div className="flex gap-4">
-            <YearTag>2020</YearTag>
-            <ProjectItem title="Blog App (Perahu Media)" source="perahumedia.herokuapp.com">
-               Sebuah blog sederhana yang dibuat menggunakan Django
-               Framework.
-            </ProjectItem>
          </div> */}
       </div>
    )
