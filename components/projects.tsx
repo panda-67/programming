@@ -2,79 +2,91 @@ import Link from "next/link"
 
 export default function Projects() {
    return (
-      <div className="space-y-6">
-         <h3>Recent Project</h3>
-         <div className="flex gap-4">
-            <YearTag>2023</YearTag>
-            <div className="space-y-4 my-1">
-               <ProjectItem title="Graptail" source="graptail.net">
-                  <em>Re-layout</em> tampilan aplikasi web graptail, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
-               </ProjectItem>
-               <ProjectItem title="WebFont" source="creative.timoh.net">
-                  Menambahkan bebeapa fitur pada aplikasi WebFont, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
-               </ProjectItem>
-               <ProjectItem title="Umarhmu" source="umrahmu.com">
-                  The travel and membership app to help people to do hajj & umrah. Member will get mentoring session to advanced course and daily task about how to gain extra income and prepare themself to go to makkah. The member app is mobile version (Android and iOS). Communicates with API to main app that build using Laravel.<br/>
-                  <small>(<em>under development</em>)</small>
-               </ProjectItem>
-               <ProjectItem title="WebFont Documentation" source="doc.creative.timoh.net">
-                  Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
-                     className="hover:text-sky-500"
-                     href="https://creative.timoh.net/"
-                  >
-                     (Creative Platform)
-                  </Link>.
-               </ProjectItem>
+      <>
+         <div className="space-y-6">
+            <h3>Current Project</h3>
+            <div className="flex gap-4">
+               <YearTag>{new Date().getFullYear()}</YearTag>
+               <div className="space-y-4 my-1">
+                  <ProjectItem title="Jroh Tijarah App" source="">
+                     Aplikasi perdagangan.
+                  </ProjectItem>
+               </div>
             </div>
          </div>
-         <div className="flex gap-4">
-            <YearTag>2022</YearTag>
-            <div className="space-y-4 my-1">
-               <ProjectItem title="DQA Dokumentasi" source="doc.dqa.sch.id">
-                  Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
-                     className="hover:text-sky-500"
-                     href="https://dqa.sch.id/"
-                  >
-                     (Darul Quran Aceh)
-                  </Link> pada halaman Admin.
-               </ProjectItem>
-               <ProjectItem
-                  title="Open Journal Systems (Journal Jeumpa)"
-                  source="ejurnalunsam.id/index.php/jempa/index"
-               >
-                  Sebuah aplikasi untuk mengelola jurnal-jurnal ilmiah secara
-                  lebih rapi dan dengan alur kerja yang sudah terstruktur.
-                  Aplikasi ini memudahkan penulis untuk mempublikasikan
-                  jurnalnya dan juga memudahkan publisher dalam mengelola
-                  jurnal. Aplikasi ini dibangun dengan menggunakan cms OJS
-                  &nbsp;
-                  <Link
-                     className="hover:text-sky-500"
-                     href="https://pkp.sfu.ca/ojs/"
-                  >
-                     (Open Journal Systems)
-                  </Link>
-                  .
-               </ProjectItem>
-               <ProjectItem
-                  title="Catalog App (Rids Blades)"
-                  source="ridsblades.com"
-               >
-                  Sebuah aplikasi yang dapat menampilkan barang-barang
-                  dagangan. Sehingga penjual atau pengusaha dapat memamerkan
-                  barang dagangan secara lebih luas dan dapat menjangkau
-                  pembeli lebih banyak.
-               </ProjectItem>
-               <ProjectItem
-                  title="Personal Profil (Samsul Muarrif)"
-                  source="samsulmuarrif.me"
-               >
-                  Aplikasi web yang merupakan static site menggunakan <i>Github Pages</i>.
-                  Sebuah personal profil dan blog yang dapat menjadi sebagai wadah <em>self branded</em> dan wadah untuk menyampaikan inspirasi-isnpirasi serta berbagi ilmu.
-               </ProjectItem>
+         <div className="space-y-6">
+            <h3>Recent Project</h3>
+            <div className="flex gap-4">
+               <YearTag>2023</YearTag>
+               <div className="space-y-4 my-1">
+                  <ProjectItem title="Graptail" source="graptail.net">
+                     <em>Re-layout</em> tampilan aplikasi web graptail, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
+                  </ProjectItem>
+                  <ProjectItem title="WebFont" source="creative.timoh.net">
+                     Menambahkan bebeapa fitur pada aplikasi WebFont, yang merupakan sebuah aplikasi web untuk menjual produk-produk kreatif (<em>market place</em>).
+                  </ProjectItem>
+                  <ProjectItem title="Umarhmu" source="umrahmu.com">
+                     The travel and membership app to help people to do hajj & umrah. Member will get mentoring session to advanced course and daily task about how to gain extra income and prepare themself to go to makkah. The member app is mobile version (Android and iOS). Communicates with API to main app that build using Laravel.<br />
+                     <small>(<em>under development</em>)</small>
+                  </ProjectItem>
+                  <ProjectItem title="WebFont Documentation" source="doc.creative.timoh.net">
+                     Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
+                        className="hover:text-sky-500"
+                        href="https://creative.timoh.net/"
+                     >
+                        (Creative Platform)
+                     </Link>.
+                  </ProjectItem>
+               </div>
             </div>
-         </div>
-         {/* <div className="flex gap-4">
+            <div className="flex gap-4">
+               <YearTag>2022</YearTag>
+               <div className="space-y-4 my-1">
+                  <ProjectItem title="DQA Dokumentasi" source="doc.dqa.sch.id">
+                     Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi web <Link
+                        className="hover:text-sky-500"
+                        href="https://dqa.sch.id/"
+                     >
+                        (Darul Quran Aceh)
+                     </Link> pada halaman Admin.
+                  </ProjectItem>
+                  <ProjectItem
+                     title="Open Journal Systems (Journal Jeumpa)"
+                     source="ejurnalunsam.id/index.php/jempa/index"
+                  >
+                     Sebuah aplikasi untuk mengelola jurnal-jurnal ilmiah secara
+                     lebih rapi dan dengan alur kerja yang sudah terstruktur.
+                     Aplikasi ini memudahkan penulis untuk mempublikasikan
+                     jurnalnya dan juga memudahkan publisher dalam mengelola
+                     jurnal. Aplikasi ini dibangun dengan menggunakan cms OJS
+                     &nbsp;
+                     <Link
+                        className="hover:text-sky-500"
+                        href="https://pkp.sfu.ca/ojs/"
+                     >
+                        (Open Journal Systems)
+                     </Link>
+                     .
+                  </ProjectItem>
+                  <ProjectItem
+                     title="Catalog App (Rids Blades)"
+                     source="ridsblades.com"
+                  >
+                     Sebuah aplikasi yang dapat menampilkan barang-barang
+                     dagangan. Sehingga penjual atau pengusaha dapat memamerkan
+                     barang dagangan secara lebih luas dan dapat menjangkau
+                     pembeli lebih banyak.
+                  </ProjectItem>
+                  <ProjectItem
+                     title="Personal Profil (Samsul Muarrif)"
+                     source="samsulmuarrif.me"
+                  >
+                     Aplikasi web yang merupakan static site menggunakan <i>Github Pages</i>.
+                     Sebuah personal profil dan blog yang dapat menjadi sebagai wadah <em>self branded</em> dan wadah untuk menyampaikan inspirasi-isnpirasi serta berbagi ilmu.
+                  </ProjectItem>
+               </div>
+            </div>
+            {/* <div className="flex gap-4">
             <YearTag>2021</YearTag>
             <ProjectItem title="Catalog App (Octo Poin)" source="octopoin.com">
                Sebuah aplikasi yang dapat menampilkan barang-barang dagangan
@@ -85,11 +97,12 @@ export default function Projects() {
                <em>insight</em>.
             </ProjectItem>
          </div> */}
-      </div>
+         </div>
+      </>
    )
 }
 
-function YearTag({ children }: { children: any }) {
+function YearTag({ children }: { children?: any }) {
    return (
       <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-500 text-amber-50 dark:bg-amber-100 dark:text-stone-800 w-max h-max">
          {children}
