@@ -17,7 +17,7 @@ export default function Hero() {
                   />
                </Link>
                <p className="md:text-3xl my-6 text-green-500 text-center">
-                  Hi, I&#x27;m <Link href="https://samsulmuarrif.me" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
+                  Hi, I&#x27;m <Link href="https://samsulmuarrif.my.id" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
                </p>
                <h4 className="max-w-3xl lg:text-2xl mx-auto dark:text-white text-zinc-600 text-center py-2">
                   Building digital products, brands, and experiences.
