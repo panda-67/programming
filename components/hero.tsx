@@ -17,7 +17,7 @@ export default function Hero() {
                   />
                </Link>
                <p className="md:text-3xl my-6 text-green-500 text-center">
-                  Hi, I&#x27;m <Link href="https://samsulmuarrif.my.id" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
+                  Hi, I&#x27;m <Link href="https://panda-67.github.io" className=" underline underline-offset-8 hover:text-sky-500">Samsul Muarrif</Link>
                </p>
                <h4 className="max-w-3xl lg:text-2xl mx-auto dark:text-white text-zinc-600 text-center py-2">
                   Building digital products, brands, and experiences.
@@ -60,26 +60,26 @@ export default function Hero() {
                         </svg>
                         <span className="dark:text-slate-200">Gmail</span>
                      </Link>
-                     <Link
-                        href="https://wa.me/6285159606776?text=Hello+Samsul+Muarrif"
-                        target="_blank"
-                        className="flex gap-2 hover:text-sky-500"
-                     >
-                        <svg className="w-5" viewBox="0 0 512 512">
-                           <rect width="512" height="512" rx="15%" fill="#25d366" />
-                           <path
-                              fill="#25d366"
-                              stroke="#fff"
-                              strokeWidth="26"
-                              d="M123 393l14-65a138 138 0 1150 47z"
-                           />
-                           <path
-                              fill="#fff"
-                              d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
-                           />
-                        </svg>
-                        <span className="dark:text-slate-200">Whatsapp</span>
-                     </Link>
+                     {/* <Link */}
+                     {/*    href="https://wa.me/6285159606776?text=Hello+Samsul+Muarrif" */}
+                     {/*    target="_blank" */}
+                     {/*    className="flex gap-2 hover:text-sky-500" */}
+                     {/* > */}
+                     {/*    <svg className="w-5" viewBox="0 0 512 512"> */}
+                     {/*       <rect width="512" height="512" rx="15%" fill="#25d366" /> */}
+                     {/*       <path */}
+                     {/*          fill="#25d366" */}
+                     {/*          stroke="#fff" */}
+                     {/*          strokeWidth="26" */}
+                     {/*          d="M123 393l14-65a138 138 0 1150 47z" */}
+                     {/*       /> */}
+                     {/*       <path */}
+                     {/*          fill="#fff" */}
+                     {/*          d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18" */}
+                     {/*       /> */}
+                     {/*    </svg> */}
+                     {/*    <span className="dark:text-slate-200">Whatsapp</span> */}
+                     {/* </Link> */}
                   </div>
                </div>
             </div>
