@@ -7,7 +7,7 @@ export default function Projects() {
         <h3>Current Project</h3>
         <div className="flex gap-4">
           <YearTag>{new Date().getFullYear()}</YearTag>
-          <div className="space-y-4 my-1">
+          <div className="space-y-8 my-1">
             <ProjectItem
               title="Jroh Tijarah App"
               source="kuliner.jrohtijarah.com"
@@ -18,24 +18,21 @@ export default function Projects() {
                 (<em>under development</em>)
               </small>
             </ProjectItem>
-             <ProjectItem
-              title="Jroh Tijarah Klien"
-              source="jrohtijarah.com"
-            >
+            <ProjectItem title="Jroh Tijarah Klien" source="jrohtijarah.com">
               Aplikasi klien (owner) perdagangan.
               <br />
               <small>
                 (<em>under development</em>)
               </small>
             </ProjectItem>
-         </div>
+          </div>
         </div>
       </div>
       <div className="space-y-6">
         <h3>Recent Project</h3>
         <div className="flex gap-4">
           <YearTag>2024</YearTag>
-          <div className="space-y-4 my-1">
+          <div className="space-y-8 my-1">
             <ProjectItem title="Umarhmu" source="app.umrahmu.com">
               The travel and membership app to help people to do hajj & umrah.
               Member will get mentoring session to advanced course and daily
@@ -46,7 +43,7 @@ export default function Projects() {
         </div>
         <div className="flex gap-4">
           <YearTag>2023</YearTag>
-          <div className="space-y-4 my-1">
+          <div className="space-y-8 my-1">
             <ProjectItem title="Graptail" source="graptail.net">
               <em>Re-layout</em> tampilan aplikasi web graptail, yang merupakan
               sebuah aplikasi web untuk menjual produk-produk kreatif (
@@ -75,7 +72,7 @@ export default function Projects() {
         </div>
         <div className="flex gap-4">
           <YearTag>2022</YearTag>
-          <div className="space-y-4 my-1">
+          <div className="space-y-8 my-1">
             <ProjectItem title="DQA Dokumentasi" source="doc.dqa.sch.id">
               Sebuah aplikasi web untuk mengelola dokumentasi terhadap aplikasi
               web{" "}
@@ -135,7 +132,7 @@ export default function Projects() {
 
 function YearTag({ children }: { children?: any }) {
   return (
-    <div className="my-1 p-2 text-xs font-semibold rounded-full bg-orange-500 text-amber-50 dark:bg-amber-100 dark:text-stone-800 w-max h-max">
+    <div className="my-1 pt-2 pl-2 text-xs font-semibold border-t border-l rounded-tl-2xl border-orange-500 text-stone-800 dark:border-amber-100 dark:text-amber-100 w-max h-max">
       {children}
     </div>
   );
@@ -151,7 +148,7 @@ function ProjectItem({
   source: string;
 }) {
   return (
-    <div>
+    <div className="border-l border-t rounded-tl-2xl border-emerald-800 pt-4 pl-4">
       <h5 className="font-semibold flex flex-col">
         {title}
         <Link
