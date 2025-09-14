@@ -8,6 +8,23 @@ export default function Projects() {
         <div className="flex gap-4">
           <YearTag>{new Date().getFullYear()}</YearTag>
           <div className="space-y-8 my-1">
+            <ProjectItem title="Notivra" source="notivra.com">
+              Notivra is a modern Laravel + React business platform designed
+              for: Managing services and client requests Running courses and
+              lessons Generating invoices and integrating with online payments
+              Delivering content via a Markdown-powered blog Supporting
+              communication through email and ticketing This architecture makes
+              it flexible for both academic services and general client-based
+              projects.
+            </ProjectItem>
+          </div>
+        </div>
+      </div>
+      <div className="space-y-6">
+        <h3>Recent Project</h3>
+        <div className="flex gap-4">
+          <YearTag>2024</YearTag>
+          <div className="space-y-8 my-1">
             <ProjectItem
               title="Jroh Tijarah App"
               source="kuliner.jrohtijarah.com"
@@ -25,14 +42,6 @@ export default function Projects() {
                 (<em>under development</em>)
               </small>
             </ProjectItem>
-          </div>
-        </div>
-      </div>
-      <div className="space-y-6">
-        <h3>Recent Project</h3>
-        <div className="flex gap-4">
-          <YearTag>2024</YearTag>
-          <div className="space-y-8 my-1">
             <ProjectItem title="Umarhmu" source="app.umrahmu.com">
               The travel and membership app to help people to do hajj & umrah.
               Member will get mentoring session to advanced course and daily
